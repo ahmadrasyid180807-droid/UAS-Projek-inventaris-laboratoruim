@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // 2. Fungsi untuk memvalidasi input tunggal
     function validateInput(input) {
         let isValid = true;
-        
+
         // Cek jika field kosong untuk input wajib
         if (input.required) {
             if (input.tagName === 'SELECT') {
@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.addEventListener('submit', function (event) {
         const form = event.target;
         const requiredInputs = form.querySelectorAll('[required]');
-        
+
         // Jika form tidak memiliki input required, lewati
         if (requiredInputs.length === 0) return;
 
